@@ -1,0 +1,13 @@
+---
+applications:
+- name: main_bot
+  path : .
+  command: python main.py
+  memory: 256M
+  disk_quota: 512M
+  routes:
+  - route: main_bot.cfapps.us10-001.hana.ondemand.com
+  services:
+  - psql
+  buildpacks:
+  - python_buildpack
