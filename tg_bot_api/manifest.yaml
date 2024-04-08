@@ -1,0 +1,15 @@
+---
+applications:
+- name: tg_bot
+  path : .
+  command: python bot.py
+  memory: 256M
+  disk_quota: 256M
+  health-check-type: process
+  routes:
+  - route: tg_bot.cfapps.us10-001.hana.ondemand.com
+  buildpacks:
+  - python_buildpack
+  env:
+    TOKEN: "6857350029:AAFyw4OeekdkCDepYUeK8ugvo_yyDpIf5gQ"
+    BACKEND_URL: https://main_bot.cfapps.us10-001.hana.ondemand.com
