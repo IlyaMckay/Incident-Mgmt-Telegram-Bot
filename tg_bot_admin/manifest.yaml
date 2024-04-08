@@ -6,8 +6,8 @@ applications:
   memory: 256M
   disk_quota: 256M
   routes:
-  - route: admin_bot.cfapps.us10-001.hana.ondemand.com
+  - route: admin
   buildpacks:
   - python_buildpack
   env:
-    BACKEND_URL: https://main_bot.cfapps.us10-001.hana.ondemand.com
+    BACKEND_URL: bot
