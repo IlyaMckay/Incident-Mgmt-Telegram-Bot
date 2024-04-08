@@ -11,5 +11,5 @@ applications:
   buildpacks:
   - python_buildpack
   env:
-    TOKEN: "6857350029:AAFyw4OeekdkCDepYUeK8ugvo_yyDpIf5gQ"
-    BACKEND_URL: https://main_bot.cfapps.us10-001.hana.ondemand.com
+    TOKEN: "TOKEN"
+    BACKEND_URL: Backend
