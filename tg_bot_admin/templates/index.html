@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+      body {
+        margin-left: 10px;
+        font-family: Arial, sans-serif;
+        /* background-color: #1c1d1d;
+        color: #fffdf0; */
+      }
+    </style>
+</head>
+<body>
+    <table border="1">
+    {% for incident in incidents %}
+    <tr>
+        <td><a href="/incident/{{ incident.incident_id }}">{{ incident.incident_id }}</a></td>
+        <td>{{ incident.reported_by_username }}</td>
+        <td>{{ incident.processed_by_username }}</td>
+        <td>{{ incident.reported_at }}</td>
+        <td>{{ incident.updated_at }}</td>
+        <td>{{ incident.incident_status }}</td>
+        <td>{{ incident.description }}</td>
+        <td>{{ incident.urgency }}</td>
+        <td>{{ incident.impact }}</td>
+        <td>{{ incident.tags }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

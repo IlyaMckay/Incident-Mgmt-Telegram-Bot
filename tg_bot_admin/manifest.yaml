@@ -1,0 +1,13 @@
+---
+applications:
+- name: admin_bot
+  path : .
+  command: flask --app main run --host=0.0.0.0 --port=$PORT
+  memory: 256M
+  disk_quota: 256M
+  routes:
+  - route: admin_bot.cfapps.us10-001.hana.ondemand.com
+  buildpacks:
+  - python_buildpack
+  env:
+    BACKEND_URL: https://main_bot.cfapps.us10-001.hana.ondemand.com

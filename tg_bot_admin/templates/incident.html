@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incident</title>
+    <style>
+      body {
+        margin-left: 10px;
+        font-family: Arial, sans-serif;
+        /* background-color: #1c1d1d;
+        color: #fffdf0; */
+      }
+    </style>
+  </head>
+  <body>
+    <dev border="1">
+      <p>Incident id: {{ incident.incident_id }}</p>
+      <!-- <p>Reported by: {{ incident.reported_by }}</p> -->
+      <p>Reported At: {{ incident.reported_at }}</p>
+      <p>Urgency: {{ incident.urgency }}</p>
+      <p>Impact: {{ incident.impact }}</p>
+      <p>Description: {{ incident.description }}</p>
+    </dev>
+    <table border="1">
+      {% for comment in comments %}
+      <tr>
+        <td>{{ comment.created_by }}</td>
+        <td>{{ comment.created_at }}</td>
+        <td>{{ comment.incident_status }}</td>
+        <td>{{ comment.comment }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br />
+    <form action="" method="POST">
+      <div>
+        <label for="comment">Add comment:</label>
+        <input id="Comment" name="comment" />
+        <br />
+        <br />
+        <label for="status">Choose new status:</label>
+        <select id="Status" name="status">
+          <option value="Open">Open</option>
+          <option value="In Progress">In Progress</option>
+          <option value="User Action">User Action</option>
+          <option value="Closed">Closed</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <button type="submit">Save changes</button>
+      </div>
+    </form>
+    <script src="main.py"></script>
+  </body>
+</html>
