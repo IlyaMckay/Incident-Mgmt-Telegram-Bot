@@ -23,7 +23,13 @@ Click on [Telegram Bot](https://t.me/@tele4crm_bot) to open in telegram.
 
 Click on [Admin Page](https://admin_bot.cfapps.us10-001.hana.ondemand.com) to open.
 
-
+## Dependencies
+```
+psycopg2==2.9.9
+python-telegram-bot==21.0.1
+requests==2.31.0
+flask==3.0.2
+```
 ## Contributors
 
 - Ilya Makeev
