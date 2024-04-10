@@ -1,6 +1,6 @@
 # Incident Management Telegram Bot
 
-This microservices-based Incident Management Telegram Bot facilitates incident reporting via Telegram and incident management via admin web page.
+This microservices-based Telegram Bot simplifies incident reporting and management, all deployed within the SAP Business Technology Platform (BTP) environment. The database is hosted on Neon.
 
 [Backend](tg_backend/main.py) is built on `Python` utilizing following technologies:
 - `http.server` as HTTP server classes.
@@ -22,3 +22,13 @@ Click on [Telegram Bot](https://t.me/@tele4crm_bot) to open in telegram.
 - `Requests` as requests HTTP Library.
 
 Click on [Admin Page](https://admin_bot.cfapps.us10-001.hana.ondemand.com) to open.
+
+
+## Contributors
+
+- Ilya Makeev
+- [Micellius](https://github.com/micellius) as a Mentor
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/cult2rologist/TETRIS/blob/main/LICENCE) file for details.
