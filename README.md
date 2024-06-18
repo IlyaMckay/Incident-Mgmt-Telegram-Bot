@@ -1,7 +1,5 @@
 # Incident Management Telegram Bot
 
-⚠️ Service is down. I'm working on it and the service will be awailable soon! ⚠️
-
 This microservices-based Telegram Bot simplifies incident reporting and management, all deployed within the SAP Business Technology Platform (BTP) environment utilizing Cloud Foundry for deployment. The database is hosted on Neon.
 
 [Backend](tg_backend/main.py) is built on `Python` utilizing following technologies:
